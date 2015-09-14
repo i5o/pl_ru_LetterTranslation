@@ -79,9 +79,13 @@ def main(first=True):
     'ju' : 'Юю',
     'ja' : 'Яя'}
 
-    print "Rosyjski odpowiednik: "
-    print alphabet[letter]
-    main(first=False)
+    if letter in alphabet:
+        print "Rosyjski odpowiednik: "
+        print alphabet[letter]
+        main(first=False)
+    else:
+        print 'Chyba coś źle wpisałeś..'
+        main(first=False)
 
 if __name__ == "__main__":
     main(first=True)
