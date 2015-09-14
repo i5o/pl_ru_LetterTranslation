@@ -5,7 +5,7 @@ def main(first=True):
         print "--------------------------------------"
         print "Zamiennik polskich liter na rosyjskie"
         print "--------------------------------------"
-    print "Podaj literę::"
+    print "Podaj literę:"
     letter = raw_input()
     letter = letter.lower()
     alphabet = {'a' : 'Аа',
